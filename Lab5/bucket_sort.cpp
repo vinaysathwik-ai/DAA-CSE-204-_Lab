@@ -13,11 +13,14 @@ void bucketSort(vector<int>&a){
 }
 int main(){
     int n;
+    cout<<"Enter no of elements:"<<endl;
     cin>>n;
     vector<int>a(n);
+    cout<<"Enter the elements of the array:"<<endl;
     for(int&i:a)
     cin>>i;
     bucketSort(a);
+    cout<<"Bucket Sort:"<<endl;
     for(int i:a)
     cout<<i<<" ";
 }
